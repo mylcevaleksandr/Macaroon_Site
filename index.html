@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/adaptive.css">
 </head>
 <body>
 <div class="wrapper">
@@ -41,11 +42,13 @@
                 </div>
                 <button class="btn main__btn">Выбрать макарун</button>
             </div>
-            <div class="main__image">
-                <div class="main__image-img">
-                    <img src="images/macaroon1.png" alt="macaroons">
+            <div class="main__image-wrapper">
+                <div class="main__image">
+                    <div class="main__image-img">
+                        <img src="images/macaroon1.png" alt="macaroons">
+                    </div>
+                    <div class="main__image-animation"></div>
                 </div>
-                <div class="main__image-animation"></div>
             </div>
         </div>
     </section>
@@ -161,35 +164,33 @@
 </section>
 
 <section class="order section-white">
-    <div class="container">
-        <div class=" order__container">
-            <div class="order__image">
-                <div class="order__image-strawberry">
-                    <img src="images/strawberry.png" alt="strawberry">
-                </div>
-                <div class="order__image-img">
-                    <img src="images/macaroon3.png" alt="macaroon">
-                </div>
+    <div class="container order__container ">
+        <div class="order__image">
+            <div class="order__image-strawberry">
+                <img src="images/strawberry.png" alt="strawberry">
             </div>
-            <div class="order__info">
-                <h2 class="order__heading">Закажите макарун!</h2>
-                <div class="order__article">Выберите понравившийся макарун, заполните форму и ожидайте звонка нашего
-                    пекаря!
-                </div>
-                <form action="" class="order__form">
-                    <label for="choice" class="form__choice bold">Ваш выбор</label>
-                    <input type="text" name="choice" id="choice" placeholder="Напишите, что хотите заказать..."
-                           class="form__textarea form-all">
-                    <label for="contacts" class="form__contacts bold">Заполните данные для заказа</label>
-                    <input type="text" id="contacts" name="contacts" placeholder="Ваше имя"
-                           class="form__contact form-all">
-                    <input type="text" id="phone" name="phone" placeholder="+375 (__) ___ - __ - __"
-                           class="form__phone form-all">
-                    <button class="btn form__btn">Оформить заказ</button>
-                </form>
-                <div class="order__image-strawberry2">
-                    <img src="images/strawberry2.png" alt="strawberry">
-                </div>
+            <div>
+                <img src="images/macaroon3.png" alt="macaroon" class="order__image-img">
+            </div>
+        </div>
+        <div class="order__info">
+            <h2 class="order__heading">Закажите макарун!</h2>
+            <div class="order__article">Выберите понравившийся макарун, заполните форму и ожидайте звонка нашего
+                пекаря!
+            </div>
+            <form action="" class="order__form">
+                <label for="choice" class="form__choice bold">Ваш выбор</label>
+                <input type="text" name="choice" id="choice" placeholder="Напишите, что хотите заказать..."
+                       class="form__textarea form-all">
+                <label for="contacts" class="form__contacts bold">Заполните данные для заказа</label>
+                <input type="text" id="contacts" name="contacts" placeholder="Ваше имя"
+                       class="form__contact form-all">
+                <input type="text" id="phone" name="phone" placeholder="+375 (__) ___ - __ - __"
+                       class="form__phone form-all">
+                <button class="btn form__btn">Оформить заказ</button>
+            </form>
+            <div class="order__image-strawberry2">
+                <img src="images/strawberry2.png" alt="strawberry">
             </div>
         </div>
     </div>
@@ -206,7 +207,7 @@
             <span class="instagram">Мы в Instagram</span>
         </div>
         <div class="phone footer__phone">+375 (29) 368-98-68</div>
-        <div class="footer__gift">
+        <div class="footer__gift-parent">
             <div class="gift-message">
                 <img src="images/Shape.png" alt="rectangle" class="gift-message-img">
             </div>
