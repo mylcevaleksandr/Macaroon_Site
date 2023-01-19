@@ -6,6 +6,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/adaptive.css">
+    <script async src="JavaScript/script.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -13,9 +14,25 @@
         <div class="container header__container">
             <div class="logo header__logo">
                 <img src="images/logo@2x.png" alt="logo" class="logo__img">
+                <img id="menu-burger" src="images/burger.png" alt="burger" class="header__burger">
             </div>
-            <nav class="menu">
-                <ul class="menu__list">
+            <nav id="menu-ul" class="menu">
+                <div class="menu__close">
+                    <svg viewBox="0 0 492 492">
+                        <g>
+                            <g>
+                                <path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872
+			c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872
+			c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052
+			L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116
+			c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952
+			c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116
+			c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"/>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <ul class="menu__list menu-ul-hidden">
                     <li>
                         <a href="#" class="menu__action">Пироженки</a>
                     </li>
@@ -45,7 +62,7 @@
             <div class="main__image-wrapper">
                 <div class="main__image">
                     <div class="main__image-img">
-                        <img src="images/macaroon1.png" alt="macaroons">
+                        <img src="images/macaroon1.png" alt="macaroons" class="main__image-image">
                     </div>
                     <div class="main__image-animation"></div>
                 </div>
@@ -207,6 +224,7 @@
             <span class="instagram">Мы в Instagram</span>
         </div>
         <div class="phone footer__phone">+375 (29) 368-98-68</div>
+        <div class="rights2">Все права защищены, 2020</div>
         <div class="footer__gift-parent">
             <div class="gift-message">
                 <img src="images/Shape.png" alt="rectangle" class="gift-message-img">

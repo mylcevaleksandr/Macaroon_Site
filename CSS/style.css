@@ -63,6 +63,14 @@
     cursor: pointer;
 }
 
+.header__burger {
+    display: none;
+}
+
+.menu__close{
+    display: none;
+}
+
 .menu__list {
     list-style: none;
     display: flex;
@@ -548,7 +556,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     bottom: 30px;
     right: 30px;
     transition: all 1s ease-in-out;
@@ -577,6 +585,13 @@
     box-shadow: 0 0 12.6px 2.4px rgba(130, 19, 40, 0.5);
     width: 90px;
     height: 90px;
+}
+
+.rights2 {
+    display: none;
+    font-size: 12px;
+    font-family: "Gilroy-Regular", sans-serif;
+    color: rgb(227, 172, 180);
 }
 
 
