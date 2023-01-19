@@ -1,7 +1,8 @@
-@media screen and (max-width: 1806px) {
-
+@media screen and (max-width: 1385px) {
     .footer__gift-parent {
-        position: revert;
+        transform: scale(75%);
+        bottom: 0;
+        right: -20px;
     }
 }
 
@@ -27,6 +28,12 @@
 
 }
 
+@media screen and (max-width: 1178px) {
+    .card-center {
+        grid-area: 2/2/3/3;
+    }
+}
+
 @media screen and (max-width: 950px ) {
     .main__container {
         flex-wrap: wrap;
@@ -40,13 +47,11 @@
 
     .main__image-wrapper {
         width: 100%;
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .main__image {
+        position: relative;
         right: 30px;
         top: -62px;
+        display: flex;
+        justify-content: flex-end;
     }
 
     .about__image {
@@ -67,6 +72,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .header__phone {
+        display: none;
+    }
+
     .top-container {
         display: flex;
         flex-direction: column;
@@ -141,40 +150,10 @@
         100% {
             top: 60px;
         }
-
-    }
-
-    .footer__gift-parent {
-        position: fixed;
-        bottom: 5px;
-        right: 5px;
     }
 }
 
 @media screen and (max-width: 659px) {
-
-    .header__logo {
-        order: 1;
-    }
-
-    .header__phone {
-        order: 2;
-
-    }
-
-    .menu {
-        order: 3;
-        width: 340px;
-        margin-top: 30px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .header__container {
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
     .main__container {
         padding-top: 66px;
         padding-bottom: 50px;
@@ -195,13 +174,13 @@
     }
 
     .main__image-wrapper {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .main__image {
         transform: scale(0.75);
         position: revert;
+        justify-content: center;
+    }
+
+    .card-center {
+        grid-area: revert;
     }
 
     .order__container {
@@ -269,6 +248,11 @@
 
     .description__info {
         width: 185px;
+    }
+
+    .footer__gift-parent {
+        right: -30px;
+        bottom: -5px;
     }
 }
 
@@ -339,10 +323,6 @@
         max-width: 350px;
     }
 
-    .main__image-image {
-        max-width: 100%;
-    }
-
     .description {
         grid-template-columns: repeat(auto-fill, 165px);
     }
@@ -384,7 +364,7 @@
         padding-top: 50px;
         padding-bottom: 300px;
         background: rgba(7, 7, 7, 0.88);
-        z-index: 1;
+        z-index: 999;
     }
 
     .menu__open {

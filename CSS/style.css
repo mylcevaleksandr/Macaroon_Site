@@ -67,7 +67,7 @@
     display: none;
 }
 
-.menu__close{
+.menu__close {
     display: none;
 }
 
@@ -102,6 +102,10 @@
     cursor: pointer;
 }
 
+.header__phone {
+    margin-left: 100px;
+}
+
 .main__container {
     display: flex;
     justify-content: space-between;
@@ -110,6 +114,8 @@
 }
 
 .main__info {
+    position: relative;
+    z-index: 99;
     display: flex;
     flex-direction: column;
     max-width: 579.25px;
@@ -163,41 +169,57 @@
     height: 60px;
 }
 
-.main__image {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .main__image-img {
     position: relative;
-    z-index: 4;
+    z-index: 2;
 }
 
 .main__image-animation {
-    position: absolute;
-    width: 160px;
-    height: 160px;
-    z-index: 1;
-    border-radius: 50%;
-    border: 0.1em solid #71081EFF;
-    animation: pulse 3s infinite ease-out;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .main__image-animation::before {
     content: '';
     position: absolute;
-    width: 160px;
-    height: 160px;
+    width: 170px;
+    height: 170px;
+    top: 50%;
     border-radius: 50%;
     z-index: 1;
-    animation: pulse-2 3s infinite ease-out;
+    animation: pulse 3s infinite ease-out;
     border: 0.1em solid #71081EFF;
 }
 
+.main__image-animation:after {
+    content: '';
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: 50%;
+    z-index: 1;
+    border-radius: 50%;
+    border: 0.1em solid #71081EFF;
+    animation: pulse-2 3s infinite ease-out;
+}
 
 @keyframes pulse {
+    0% {
+        transform: scale(1.5);
+
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(5);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse-2 {
     0% {
         transform: scale(1);
 
@@ -208,15 +230,6 @@
     100% {
         transform: scale(4.5);
         opacity: 0;
-    }
-}
-
-@keyframes pulse-2 {
-    0% {
-        transform: scale(0.5);
-    }
-    100% {
-        transform: scale(0.95);
     }
 }
 
@@ -553,6 +566,7 @@
 }
 
 .footer__gift-parent {
+    z-index: 999;
     display: flex;
     justify-content: center;
     align-items: center;
