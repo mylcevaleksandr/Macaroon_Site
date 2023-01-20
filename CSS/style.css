@@ -189,8 +189,12 @@
     top: 50%;
     border-radius: 50%;
     z-index: 1;
-    animation: pulse 3s infinite ease-out;
     border: 0.1em solid #71081EFF;
+    -webkit-animation: pulse 3s infinite ease-out;
+    -moz-animation: pulse 3s infinite ease-out;
+    -o-animation: pulse 3s infinite ease-out;
+    animation: pulse 3s infinite ease-out;
+
 }
 
 .main__image-animation:after {
@@ -202,6 +206,9 @@
     z-index: 1;
     border-radius: 50%;
     border: 0.1em solid #71081EFF;
+    -webkit-animation: pulse-2 3s infinite ease-out;
+    -moz-animation: pulse-2 3s infinite ease-out;
+    -o-animation: pulse-2 3s infinite ease-out;
     animation: pulse-2 3s infinite ease-out;
 }
 
@@ -219,7 +226,105 @@
     }
 }
 
+@-webkit-keyframes pulse {
+    0% {
+        transform: scale(1.5);
+
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(5);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes pulse {
+    0% {
+        transform: scale(1.5);
+
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(5);
+        opacity: 0;
+    }
+}
+
+@-o-keyframes pulse {
+    0% {
+        transform: scale(1.5);
+
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(5);
+        opacity: 0;
+    }
+}
+
 @keyframes pulse-2 {
+    0% {
+        transform: scale(1);
+
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(4.5);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes pulse-2 {
+    0% {
+        transform: scale(1);
+
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(4.5);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes pulse-2 {
+    0% {
+        transform: scale(1);
+
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(4.5);
+        opacity: 0;
+    }
+}
+
+@-o-keyframes pulse-2 {
+    0% {
+        transform: scale(1);
+
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(4.5);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes pulse-2 {
     0% {
         transform: scale(1);
 
