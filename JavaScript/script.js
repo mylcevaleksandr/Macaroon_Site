@@ -1,4 +1,4 @@
-const noScroll = document.querySelector('html');
+const noScroll = document.querySelector('html' + 'body');
 
 document.getElementById('menu-burger').onclick = function () {
     document.getElementById('menu-ul').classList.add('menu__open');
